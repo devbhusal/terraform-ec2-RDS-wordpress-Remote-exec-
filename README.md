@@ -32,16 +32,16 @@ This terraform projects creates
 
 <h2> STEPS: </h2>
 
- <p>Clone this repo using command <code>  git clone https://github.com/devbhusal/terraform-ec2-RDS-wordpress.git</code></p>
- <p> Go to project folder         <code>  cd terraform-ec2-RDS-wordpress </code></p>
+ <p>Clone this repo using command <code>  git clone https://github.com/devbhusal/terraform-ec2-RDS-wordpress-Remote-exec-.git</code></p>
+ <p> Go to project folder         <code>  cd terraform-ec2-RDS-wordpress-Remote-exec- </code></p>
  <p>Initialize terraform          <code>  terraform init</code></p>
  <p>Change database and aws setting in terraform.tfvars file </p>
  <p>Generate Key pair using        <code> ssh-keygen -f mykey-pair  </code></p>
  <p>View Plan using                <code> terraform plan -var-file="user.tfvars"  </code></p>
  <p>Apply the plan using           <code> terraform apply -var-file="user.tfvars" </code></p>
  
- <p> After successfull provisioning of AWS Resources,Using remote-exec and private key, EC2 instance will be connected via  SSH. Tail command will used to check prgress of Wordpress Installation. Once Installation is done ,You will be provided with Public Ip address of WebServer.</p>
- <h3> everything is Automatic. This will provision all needed  aws resources and also build and start webserver using USERDATA </h3>
+ <p> After successfull provisioning of AWS Resources,Using remote-exec and private key, EC2 instance will be connected via  SSH.. Once Installation is done ,You will be provided with Public Ip address of WebServer.</p>
+ <h3> everything is Automatic. This will provision all needed  aws resources and also build and start webserver using Remote-exec provisioner </h3>
 
  <p>Destroy the resources          <code> terraform destroy -var-file="user.tfvars" </code></p>
 
