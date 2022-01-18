@@ -1,3 +1,13 @@
+# terraform {
+#   cloud {
+#     organization = "devbhusal"
+
+#     workspaces {
+#       name = "testing"
+#     }
+#   }
+# }
+
 provider "aws" {
 
   region                  = var.region
